@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-icon name="arrow-back" (click)="goback();"></ion-icon>
+    <ion-title>{{article.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card >
+        <ion-card-header>
+          <ion-img [src]="article.urlToImage"></ion-img>
+           
+          <ion-card-title>{{article.title}}</ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-content>
+            {{article.description}}
+        </ion-card-content>
+      </ion-card>
+</ion-content>
