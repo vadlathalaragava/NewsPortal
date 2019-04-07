@@ -20,6 +20,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'news-single',
+        children: [
+          {
+            path: '',
+            loadChildren: '../news-single/news-single.module#NewsSinglePageModule'
+          }
+        ]
+      },
+      {
         path: 'about',
         children: [
           {

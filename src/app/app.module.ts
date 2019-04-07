@@ -14,13 +14,13 @@ import {AboutPageModule} from './about/about.module';
 import {ContactPageModule} from './contact/contact.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import {ImageModalPageModule} from './image-modal/image-modal.module';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule,
     NewsPageModule,NewsSinglePageModule,HttpClientModule,
-    AboutPageModule,ContactPageModule,FormsModule,
+    AboutPageModule,ContactPageModule,FormsModule,ImageModalPageModule,
 
      IonicModule.forRoot(), AppRoutingModule],
   providers: [
